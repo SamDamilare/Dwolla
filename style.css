@@ -1,0 +1,78 @@
+.navbar {
+  font-family: poppins;
+}
+#heroheader {
+  font-family: poppins;
+  font-size: 35px;
+  font-weight: 700;
+}
+#herotext {
+  font-family: poppins;
+  font-weight: 300px;
+  font-size: 12px;
+}
+#herobtn {
+  font-family: poppins;
+  font-size: 12px;
+}
+
+#subhead {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.nav-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+#subheadsub {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+#subtextsub {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+#footertext {
+  font-size: 15px;
+}
+h3 {
+  font-family: poppins;
+  font-weight: 700;
+}
+p {
+  font-family: poppins;
+}
+.btn {
+  font-family: poppins;
+}
+h4 {
+  font-family: poppins;
+  font-weight: 700;
+}
+h6 {
+  font-family: poppins;
+  font-weight: 700;
+}
+
+#footsubtext {
+  font-family: poppins;
+  font-size: 12px;
+}
+
+.orange-image {
+  filter: brightness(0) saturate(100%) hue-rotate(15deg);
+}
+#brandlogos {
+  opacity: 0.1;
+}
+#brandlogos:hover {
+  opacity: 1;
+}
+#zoom-in-on-cimage:hover {
+  transition: transform 0.3s ease;
+}
+#zoom-in-on-cimage:hover {
+  transition: scale(1.2);
+}

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="icon" href="https://www.dwolla.com/hubfs/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <nav
+      class="navbar sticky-top navbar-expand-lg text-light"
+      style="background-color: #2d2d48; padding-left: 3%; padding-right: 3%"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://www.dwolla.com/hubfs/dwolla-logo-white-text_6091c737.svg"
+            alt="dwolla-logo-white-text_6091c737"
+            class="pwr-header-logo__img"
+            width="156"
+            height="40"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="background: white;"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link active text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-current="page"
+              >
+                Platforms
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Solutions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Developers
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown text-light">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Learn
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Pricing</a>
+            </li>
+          </ul>
+          <div class="div ms-auto">
+            <i class="bi bi-search bg-light"></i>
+            <form class="d-flex" style="gap: 7px; align-items: center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg>
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                style="border-radius: 2px"
+              >
+                login
+              </button>
+              <input
+                class="btn btn-primary"
+                style="
+                  background-color: #ca4c24;
+                  border: none;
+                  border-radius: 2px;
+                "
+                type="submit"
+                value="Talk to Sales"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="heromaster">
+      <div
+        class="p-5 d-flex"
+        style="
+          background: #2d2d48;
+          padding-left: 5%;
+          color: white;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div>
+          <h1 id="heroheader">
+            Digitally transform your <br />payments through a<br />single
+            solution
+          </h1>
+          <br />
+          <p id="herotext">
+            Dwolla's modern approach replaces legacy technology with a
+            <br />unified and streamlined solution, improving payment security,
+            <br />data visibility and the customer experience.
+          </p>
+          <br />
+          <button
+            type="button"
+            class="btn btn-lg"
+            style="
+              color: white;
+              background-color: #ca4c24;
+              border-radius: 2px;
+              height: auto;"
+              id="herobtn"
+          >
+            Meet with a Payments Expert
+          </button>
+        </div>
+        <div>
+          <img
+            src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263043/Dwolla/Assets/homepage_hero_2x-1_jagtvo.webp" width="700rem"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="d-flex p-5"
+        style="justify-content: center; background: #f1f7fa"
+      >
+        <img
+          src="https://7996980.fs1.hubspotusercontent-na1.net/hubfs/7996980/gasbuddy-logo.svg" id="brandlogos"
+          width="200rem"
+          alt="Gas buddy"
+        />
+        <img
+          src="https://7996980.fs1.hubspotusercontent-na1.net/hubfs/7996980/goat-logo.svg" id="brandlogos"
+          width="200rem"
+          alt="Goat"
+        />
+        <img
+          src="https://7996980.fs1.hubspotusercontent-na1.net/hubfs/7996980/ibotta-logo.svg" id="brandlogos"
+          width="200rem"
+          alt="Ibotta"
+        />
+        <img
+          src="https://7996980.fs1.hubspotusercontent-na1.net/hubfs/7996980/masterworks-logo.svg" id="brandlogos"
+          width="200rem"
+          alt="Master Works"
+        />
+        <img
+          src="https://7996980.fs1.hubspotusercontent-na1.net/hubfs/7996980/mx-logo.svg" id="brandlogos"
+          width="200rem"
+          alt="MX"
+        />
+        <img
+          src="https://7996980.fs1.hubspotusercontent-na1.net/hubfs/7996980/routable-logo.svg" id="brandlogos"
+          width="200rem"
+          alt="routable"
+        />
+      </div>
+    </div>
+    <div style="padding: 4%">
+      <h3 id="subhead">Powering Payments for Every Industry</h3>
+      <br />
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Insurance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Lending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Real Estate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Healthcare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Manufacturing</a>
+        </li>
+      </ul>
+      <hr />
+      <br />
+      <div class="d-flex m-auto" style="justify-content: start">
+        <div>
+          <h4 id="subheadsub">Digital Payments for the Insurance Industry</h4>
+          <br />
+          <p id="subtextsub">
+            Dwolla empowers insurance companies to eliminate the outdated
+            payment
+            systems and manual processes that negatively impact cash flow,
+            payment predictability, payment security and policyholder experience.
+          </p>
+          <br />
+         <a href="#" class="btn" role="button" data-bs-toggle="button"
+            style="color: #ca4c24; font-weight: 700; text-decoration: underline 1px;"> 
+           <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt="">   Learn More</a
+          >
+        </div>
+
+        <div class="mx-auto">
+          <img
+            src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263042/Dwolla/Assets/homepage_industry_healthcare_2x_bidrgz.webp"
+            width="650rem"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="p-5" style="text-align: center; background: #f1f7fa">
+      <h3>Leading Open Banking in North America</h3>
+      <div class="d-flex justify-content-around" style="gap: 20px">
+        <div>
+          <h3>40+</h3>
+          <p>Partners</p>
+        </div>
+        <div>
+          <h3>20M+</h3>
+          <p>End-Users</p>
+        </div>
+        <div>
+          <h3>121M+</h3>
+          <p>Annual Transaction Volumes</p>
+        </div>
+        <div>
+          <h3>$50B+</h3>
+          <p>Processed in 2023</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-5">
+    <div>
+     <div class="p-5" style="text-align: center;"> <h3>Your Go-To Payments Partner</h3>
+      <p>
+        Dwolla enables businesses to digitally transform their payments through
+        a single solution.
+      </p></div>
+      <div class="cards d-flex" style="justify-content: center;">
+  <div
+          class="card"
+          style="
+            max-width: 18rem;
+            border: none;
+            background-color: white;
+            text-align: center;
+          "
+        >
+          <div class="card-body">
+            <div style="justify-content: center; display: flex">
+              <h6
+                style="
+                  border: 1px solid black;
+                  color: white;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  background-color: black;
+                  justify-content: center;
+                "
+              >
+                1
+              </h6>
+            </div>
+
+            <h5 class="card-title">Single API</h5>
+            <p class="card-text">
+              Dwolla unifies the payment operations experience through a single
+              solution, enabling streamlined transactions, reducing complexity
+              and enhancing visibility into financial activity.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="
+            max-width: 18rem;
+            border: none;
+            background-color: white;
+            text-align: center;
+          "
+        >
+          <div class="card-body">
+            <div style="justify-content: center; display: flex">
+              <h6
+                style="
+                  border: 1px solid black;
+                  color: white;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  background-color: black;
+                  justify-content: center;
+                "
+              >
+                2
+              </h6>
+            </div>
+
+            <h5 class="card-title">Cost Savings</h5>
+            <p class="card-text">
+              By transitioning from legacy technologies and manual processes, businesses can save money through reduced labor costs, faster processing times, lower transaction fees, improved accuracy and enhanced security and compliance measures.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="
+            max-width: 18rem;
+            border: none;
+            background-color: white;
+            text-align: center;
+          "
+        >
+          <div class="card-body">
+            <div style="justify-content: center; display: flex">
+              <h6
+                style="
+                  border: 1px solid black;
+                  color: white;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  background-color: black;
+                  justify-content: center;
+                "
+              >
+                3
+              </h6>
+            </div>
+
+            <h5 class="card-title">Seamless Bank Integration</h5>
+            <p class="card-text">
+              Dwolla streamlines integrations across payment methods and financial institutions to simplify initial integration, ongoing maintenance and future development, as well as enhance overall operational agility and financial transparency.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="
+            max-width: 18rem;
+            border: none;
+            background-color: white;
+            text-align: center;
+          "
+        >
+          <div class="card-body">
+            <div style="justify-content: center; display: flex">
+              <h6
+                style="
+                  border: 1px solid black;
+                  color: white;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  background-color: black;
+                  justify-content: center;
+                "
+              >
+                4
+              </h6>
+            </div>
+
+            <h5 class="card-title">Enterprise Grade Security</h5>
+            <p class="card-text">
+              Protect your sensitive data with Dwolla’s variety of security measures, including encryption and tokenization. Dwolla maintains a SOC 2 Type 2 report and SOC 3 report.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    
+     
+      </div>
+    </div>
+    </div>
+    <div class="container-fluid" style="background-color: #a15368;">
+      
+    <div class="container text-light" style="display: flex; flex-direction: column; align-items: center; background: #cf6c65; padding: 5%;">
+
+        <h3>
+            Ready to get started
+        </h3>
+        <p>Schedule a consultation with our team.</p>
+        <button type="button" class="btn btn-outline-light" style="border-radius: 3px; background: #2d2d48; border: none;">Talk to a Payments Expert</button>
+    </div></div>
+    
+    
+<div id="carouselExample" class="carousel slide tetx-light" style="background: #2e2e49; text-align: center;">
+  <div class="carousel-inner p-5">
+    <div class="carousel-item active text-light">
+       <p>“Our return on investment was almost immediate. We were able to get up and running in no time with <br/>Dwolla’s straightforward API. Dwolla’s flexible options such as Same Day ACH gave us the flexibility our <br/>customers demand."</p>
+    <br/>
+    <h6>
+        Transportation  |   CEO
+    </h6>
+    </div>
+    <div class="carousel-item active text-light">
+        <p>“Our return on investment was almost immediate. We were able to get up and running in no time with <br/>Dwolla’s straightforward API. Dwolla’s flexible options such as Same Day ACH gave us the flexibility our <br/>customers demand."</p>
+    <br/>
+    <h6>
+        Transportation  |   CEO
+    </h6>
+    </div>
+    <div class="carousel-item active text-light">
+         <p>“Our return on investment was almost immediate. We were able to get up and running in no time with <br/>Dwolla’s straightforward API. Dwolla’s flexible options such as Same Day ACH gave us the flexibility our <br/>customers demand."</p>
+    <br/>
+    <h6>
+        Transportation  |   CEO
+    </h6>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <!-- <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+      <div class="carousel-inner">
+    <div class="text-light" style="background: #2d2d48; padding: 5%; text-align: center;">
+        <p>“Our return on investment was almost immediate. We were able to get up and running in no time with Dwolla’s straightforward API. Dwolla’s flexible options such as Same Day ACH gave us the flexibility our customers demand."</p>
+    <br/>
+    <p>
+        Transportation  |   CEO
+    </p>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div> 
+  
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div> -->
+    
+    
+    <div class="d-flex p-5" style="align-items: safe; justify-content: center;"><div>
+        <h3>
+            Customizable Solutions
+        </h3>
+        <p>
+            Dwolla offers a variety of customizable solutions to meet the specific<br/>
+             needs of businesses looking to digitally transform their payments. Control<br/>
+             your customer experience by integrating our white-label API directly into<br/>
+             your application or product offering.
+        </p>
+        <br/>
+        <p> <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt="">  Bank Agnostic  </p>
+        <p> <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt="">  White Label</p>
+        <p> <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt="">  Scalable  </p>
+        <ul>
+            </div>
+    <div>
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263042/Dwolla/Assets/homepage_customizable_block_2x_ovzpsp.webp" width="400rem" alt="">
+    </div>
+    </div>
+    <div class="d-flex" style="justify-content: center; align-items: center;">
+      <div>
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263043/Dwolla/Assets/homepage_real-time-payments_block_2x-2_dqz6ei.webp" alt="">
+      </div>
+      <div>
+        <h3>
+          Real-Time Payments
+        </h3>
+        <p>
+          Real-Time Payments with Dwolla are transactions that clear and settle near <br/>
+          instantaneously. Access the RTP® Network with an integration to Dwolla’s <br/>
+          payment technology and turn your company into a real-time payments <br/>organization.</p>
+        <br/>
+          <p><img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt=""> Send Funds in Real Time</p>
+          <p><img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt=""> Improve Payment Transparency</=>
+          <p><img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt=""> Initiate RTP Transfers From Your Existing Bank</p>
+       
+        
+      </div>
+    </div>
+    <div class="d-flex" style="align-items: center; justify-content: space-around;">
+      <div>
+        <h3>Secure Exchange Solution</h3>
+        <p>
+          Processing payments digitally while managing risk and avoiding fraud <br/>
+          requires various levels of verification and data checks. Through Dwolla’s <br/>
+          Secure Exchange solution, you can easily integrate with our data partners <br/>
+          and securely exchange information.</p>
+          <br/>
+            <p><img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt=""> Tokenization</p>
+            <p><img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt=""> Flexibility</p>
+            <p><img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661373/Dwolla/Assets/-__dwsxmc.png" alt=""> Current Partners: Plaid, Finicity, MX, Flinks</p>
+          
+        
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263039/Dwolla/Assets/homepage_secure-exchange-block_2x_1_yhewkv.webp" alt="">
+      </div>
+    </div>
+    <div class="p-5" style=" background: #f1f7fa; text-align: center;">
+      <h3>Dwolla Partners</h3>
+      <div class="d-flex p-5" style="justify-content: space-evenly ">
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263044/Dwolla/Assets/mx-logo_cvyv2i.svg" id="brandlogos" width="200rem" alt="">
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263040/Dwolla/Assets/fincity_logo_400px_x8sqgg.svg" id="brandlogos" width="200rem" alt="">
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263044/Dwolla/Assets/nacha_logo_400px_uifnrw.svg" id="brandlogos" width="200rem" alt="">
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263044/Dwolla/Assets/plaid_logo_400px-1_cme8wq.svg" id="brandlogos" width="200rem" alt="">
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263044/Dwolla/Assets/sift_logo_400px_zmfnb5.svg" id="brandlogos" width="200rem" alt="">
+      </div>
+    </div>
+  <div class="row-fluid-wrapper row-depth-1 row-number-25 dnd-row">
+<div class="row-fluid p-5">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1704405899928" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_widget_1704405899928_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><script src="https://fast.wistia.com/embed/medias/43wumkfasg.jsonp" async></script>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+<div class="wistia_embed wistia_async_43wumkfasg videoFoam=true" style="height:100%;width:100%">
+&nbsp;
+</div>
+</div>
+</div></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+     <!-- <div class="text-light" style="background: #2d2d48; padding: 5%; text-align: center;">
+        <p>“Our return on investment was almost immediate. We were able to get up and running in no time with Dwolla’s straightforward API. Dwolla’s flexible options such as Same Day ACH gave us the flexibility our customers demand."</p>
+    <br/>
+    <p>
+        Transportation  |   CEO
+    </p></div> -->
+ <div id="carouselExample" class="carousel slide tetx-light" style="background: linear-gradient(110.1deg, rgb(241, 115, 30) 18.9%, rgb(231, 29, 54) 90.7%);; text-align: center;">
+  <div class="carousel-inner p-5">
+    <div class="carousel-item active text-light p-5" style="background-color: #af5968;">
+       <p>“Dwolla’s team feels like part of our team. They take the time to truly understand our business and goals, so they are able to effectively recommend features that are beneficial to our success.”</p>
+    <br/>
+    <h6>
+        Financial  |   CEO
+    </h6>
+    </div>
+    <div class="carousel-item active text-light p-5" style="background-color: #af5968;">
+        <p>“Dwolla’s team feels like part of our team. They take the time to truly understand our business and goals, so they are able to effectively recommend features that are beneficial to our success.”</p>
+    <br/>
+    <h6>
+        Financial  |   CEO
+    </h6>
+    </div>
+    <div class="carousel-item active text-light p-5" style="background-color: #af5968;">
+         <p>“Dwolla’s team feels like part of our team. They take the time to truly understand our business and goals, so they are able to effectively recommend features that are beneficial to our success.”</p>
+    <br/>
+    <h6>
+        Financial  |   CEO
+    </h6>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="p-5" style="max-width: 50%;">
+  <h3 style="padding-left: 10%;">
+    Innovations, Ideas and New Payment Possibilities
+
+  </h3>
+  <p style="padding-left: 10%;">From best practices to bold ideas, see how Dwolla and our customers uncover solutions using account-to-account payment technology.</p>
+</div>
+<div class="p-5">
+<div class="d-flex" style="justify-content: space-evenly;">
+  <div class="card" style="width: 22rem;">
+  <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263039/Dwolla/Assets/blog_card-header_pink_2x_aovmgt.webp" id="cimage" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4>Dwolla Connect: A Single Solution for Finance Teams</h4>
+    <p class="card-text">Streamline payment operations and reduce costs while gaining real-time visibility into cash flow. Learn more about Dwolla ...</p>
+  </div>
+</div>
+<div class="card" style="width: 22rem;">
+  <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263039/Dwolla/Assets/blog_card-header_turquoise_2x_adhfiw.webp" id="cimage" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4>Digital Transformation: Everything Suppliers Need to Know</h4>
+    <p class="card-text">Discover the opportunities digital transformation brings for suppliers. Learn how to stay competitive, automate operations and ...</p>
+  </div>
+</div>
+<div class="card" style="width: 22rem;">
+  <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263039/Dwolla/Assets/blog_card-header_orange_2x_h65nib.webp" id="cimage" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h4>Dwolla Wins Prestigious Intellyx Digital Innovator Award for Digitally Transforming Enterprise Payments</h4>
+    <p class="card-text">Learn how Dwolla's Connect solution is providing real customer results and disrupting the enterprise IT landscape by ...</p>
+  </div>
+</div>
+
+</div></div>
+
+<div class="p-5 text-light" style="background-image: url('https://res.cloudinary.com/dktrwqio1/image/upload/v1706449203/Dwolla/Assets/cta-image_un4dqa.svg'); text-align: center;">
+<div class="p-5">
+  <h3>Talk to an Expert</h3>
+  <p>
+    Let's build something innovative together.
+  </p>
+  <button type="button" class="btn btn-lg" style="background: #ca4c24; color: white; border-radius: 3px;">Schedule A Meeting</button>
+</div>
+</div>
+
+<div class="container-fluid p-5" style="background: #2d2d48; color: white;">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 ">
+    <div class="col mb-1">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706263039/Dwolla/Assets/dwolla-logo-white-text_6091c737_ov9q5j.svg" alt="">
+      </a>
+      <div class="d-flex" style="flex-direction: row; justify-content: flex-start; gap: 20px; color: white;">
+    <a href=""> <img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706661395/Dwolla/Assets/linkedin-logo_2_ybn8rb.png" alt=""></a>
+    <a href=""><img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706659213/Dwolla/Assets/youtube-clip-logo_irwh3o.png" alt=""> </a>
+    <a href=""><img src="https://res.cloudinary.com/dktrwqio1/image/upload/v1706659317/Dwolla/Assets/twitter-logo-1_glmdw4.png" alt=""> </a>
+      </div>
+      
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+    <div class="d-flex" style="gap: 50px;">
+
+    <div class="col mb-1" id="footertext">
+      <h5>Payment Methods</h5>
+      <ul class="nav flex-column" id="footsubtext">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Standard ACH</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Same Day ACH</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Real-Time Payment</a></li>
+              </ul>
+    </div>
+
+    <div class="col mb-1">
+      <h5>Features</h5>
+      <ul class="nav flex-column" id="footsubtext">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-1">
+      <h5>Solutions</h5>
+      <ul class="nav flex-column" id="footsubtext">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Insurance</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Lending Forum</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Real Estate</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Manufacturing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Healthcare</a></li>
+              </ul>
+    </div>
+     <div class="col mb-1">
+      <h5>Learn</h5>
+      <ul class="nav flex-column"  id="footsubtext">
+        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-light">Developer Docs</a></li>
+        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-light">Developer Forum</a></li>
+        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-light">Blog</a></li>
+              </ul>
+    </div>
+     <div class="col mb-1">
+      <h5>About</h5>
+      <ul class="nav flex-column" id="footsubtext">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Careers</a></li>
+           </ul>
+    </div>
+     <div class="col mb-3">
+      <h5>Legal</h5>
+      <ul class="nav flex-column" id="footsubtext">
+        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-light">Privacy Policy</a></li>
+        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-light">Terms of Service</a></li>
+        <li class="nav-item mb-3" style="width: 100px;"><a href="#" class="nav-link p-0 text-light">Do Not Sell or Share My Personal Information</a></li>
+        <li class="nav-item mb-3"><a href="#" class="nav-link p-0 text-light">Privacy Options</a></li>
+      </ul>
+    </div>
+    </div>
+   
+  </footer>
+  <hr/>
+  <p>All Rights Reserved &copy; 2024 Dwolla, Inc. |</p>
+   <div class="d-flex" style="font-size: 10px; justify-content: space-between;">
+  <p>Financial institutions play an important role in our network. All funds transfers made using the Dwolla Platform are performed by a financial institution partner, and any funds held in a <br/>Dwolla Balance are held by a financial institution partner. Learn more about our financial institution partners.</p>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+</div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
