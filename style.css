@@ -71,8 +71,20 @@ h6 {
   opacity: 1;
 }
 #zoom-in-on-cimage:hover {
-  transition: transform 0.3s ease;
+  transition: transform 1.3s ease;
 }
 #zoom-in-on-cimage:hover {
   transition: scale(1.2);
+}
+
+.footerlinks {
+  font-family: poppins;
+  font-size: 12px;
+  text-decoration: none;
+}
+.text-uppercase {
+  font-size: 14px;
+}
+.text-white {
+  text-decoration: none;
 }
